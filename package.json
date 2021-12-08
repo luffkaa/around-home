@@ -13,11 +13,15 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "serve": "^13.0.2",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
+  "proxy": "http://localhost:3004",
   "scripts": {
+    "serve": "cd data/ && npx serve -l 3004 && cd ..",
     "start": "react-scripts start",
+    "start:dev": "yarn serve & yarn start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
