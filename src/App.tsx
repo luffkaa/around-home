@@ -5,12 +5,17 @@ import { useDispatch, useSelector } from 'react-redux';
 import {
   getAllTimeSlots,
   selectAllTimeSlotsError,
+  selectAllTimeSlotsPending
 } from './store';
-import ErrorContainer from './components/ErrorContainer/ErrorContainer';
+import {
+  ErrorContainer,
+  PendingContainer
+} from './components';
 
 function App() {
   const dispatch = useDispatch();
   const error = useSelector(selectAllTimeSlotsError);
+  const pending = useSelector(selectAllTimeSlotsPending);
 
   useEffect(() => {
     dispatch(getAllTimeSlots());
@@ -18,6 +23,10 @@ function App() {
 
   if (error) {
     return <ErrorContainer />
+  }
+
+  if (pending) {
+    return <PendingContainer />
   }
   
   return (

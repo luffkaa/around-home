@@ -5,7 +5,8 @@
   height: 100vh;
 }
 
-.error__container {
+.error__container,
+.pending__container {
   justify-content: center;
   width: 500px;
   text-align: center;
