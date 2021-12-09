@@ -16,7 +16,7 @@ export interface ICompanyTimeSlots {
 }
 
 export interface ITimeSlotsStore extends IDataLoading{
-  timeSlots: ICompanyTimeSlots[],
+  allTimeSlots: ICompanyTimeSlots[],
 }
 
 
