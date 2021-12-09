@@ -1,15 +1,24 @@
 import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { useDispatch } from 'react-redux';
-import { getAllTimeSlots } from './store';
+import { useDispatch, useSelector } from 'react-redux';
+import {
+  getAllTimeSlots,
+  selectAllTimeSlotsError,
+} from './store';
+import ErrorContainer from './components/ErrorContainer/ErrorContainer';
 
 function App() {
   const dispatch = useDispatch();
+  const error = useSelector(selectAllTimeSlotsError);
 
   useEffect(() => {
     dispatch(getAllTimeSlots());
   }, [dispatch])
+
+  if (error) {
+    return <ErrorContainer />
+  }
   
   return (
     <div className="App">
