@@ -2,24 +2,26 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## To start
+## First: To start
 Run from project directory `yarn install`
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start:dev`
+### Second: `yarn start:dev`
 
-Runs the app in the development mode **together with** serving JSON.\
+Runs the app in the development mode **_together with_** serving JSON.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+## You can also run both separately
+
 ### `yarn start`
 
-Runs the app in the development mode **without** serving JSON.\
+Runs the app in the development mode **_without_** serving JSON.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
@@ -29,11 +31,6 @@ You will also see any lint errors in the console.
 
 Runs serving JSON.\
 At [http://localhost:3004](http://localhost:3004) to view it in the browser.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `yarn build`
 
