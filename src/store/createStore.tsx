@@ -6,6 +6,7 @@ import {
 } from "redux";
 import thunk from "redux-thunk"
 import { allTimeSlotsReducer } from "./allTimeSlots";
+import { chosenTimeSlotReducer } from "./chosenSlot";
 
 declare global {
   interface Window {
@@ -18,6 +19,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ||
 
 const combinedReducers = combineReducers({
     allTimeSlotsReducer,
+    chosenTimeSlotReducer,
   });
 
 export const store = createStore(
