@@ -1,0 +1,13 @@
+.company_schedule__container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.company_schedule__title {
+  text-transform: uppercase;
+}
+
