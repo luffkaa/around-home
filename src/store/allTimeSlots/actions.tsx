@@ -1,4 +1,4 @@
-import { ICompanyTimeSlots } from '../types';
+import { IGroupedData } from '../types';
 import {
   GET_ALL_TIMESLOTS_START,
   GET_ALL_TIMESLOTS_SUCCESS,
@@ -11,7 +11,7 @@ export const getAllTimeSlotsStart = () => ({
 })
 
 export const getAllTimeSlotsSuccess = (
-  data: ICompanyTimeSlots[],
+  data: IGroupedData[],
 ) => ({
   type: GET_ALL_TIMESLOTS_SUCCESS,
   payload: data,
