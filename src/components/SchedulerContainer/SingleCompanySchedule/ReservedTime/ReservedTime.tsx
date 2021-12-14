@@ -13,7 +13,7 @@ export default function ReservedTime({
 
   return (
     <div
-      className={`module_container box_shadow border_radius_3 ${style.reserved_slot__container}`
+      className={`module_container box_shadow border_radius_3 ${style.reserved_slot__container} ${!!chosenSlot && style.reserved_slot__delete}`
       }
       onClick={!!chosenSlot ? () => handleDeleteSlot() : undefined}
     >
@@ -25,6 +25,7 @@ export default function ReservedTime({
             start_time={chosenSlot.start_time}
             end_time={chosenSlot.end_time}
           />
+          <div className={style.reserved_slot__delete_btn}> x</div>
         </>
       }
     </div>

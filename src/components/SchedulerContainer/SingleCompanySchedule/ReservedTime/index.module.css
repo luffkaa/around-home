@@ -1,4 +1,19 @@
 .reserved_slot__container {
   min-height: 50px;
   cursor: pointer;
+  position: relative;
+}
+
+.reserved_slot__delete:hover:after {
+  content: 'Press to delete';
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  width: 100%;
+}
+
+.reserved_slot__delete_btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
