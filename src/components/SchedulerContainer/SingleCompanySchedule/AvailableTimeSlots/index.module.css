@@ -1,0 +1,7 @@
+.company_available_slots__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-x: scroll;
+  height: 320px;
+}

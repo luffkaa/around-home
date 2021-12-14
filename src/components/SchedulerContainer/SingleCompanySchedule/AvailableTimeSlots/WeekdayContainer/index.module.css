@@ -1,0 +1,11 @@
+.weekday__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.weekday__time_slots__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
